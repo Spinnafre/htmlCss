@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Position</title>
+</head>
+<body>
+    <div class="backPage">
+        <div id="Header">
+            <img id="imgIni" src="./assets/arizona.jpeg" alt="arizona">
+        </div>
+        <div class="Content">
+            <div id="Text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id commodi iste natus repellat ducimus, deleniti mollitia 
+                exercitationem sequi fugiat, consequuntur ea placeat molestiae 
+                accusamus quis repudiandae eius. Optio, aspernatur esse?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Id commodi iste natus repellat ducimus, deleniti mollitia
+                exercitationem sequi fugiat, consequuntur ea placeat molestiae
+                accusamus quis repudiandae eius. Optio, aspernatur esse?
+            </div>
+            <div id="Menu">+</div>
+        </div>
+        <div id="ContainerIMG" class="container">
+            <span class="close">fechar</span>
+            <img class="imgContainer" id="img">
+            <div id="legend" class='legend'></div>
+        </div>
+        
+        <script>
+            // Quando clickar na imagem IMG irá passar o alt, src e irá mudar o
+            // Display do Modal
+            const img=document.getElementById('imgIni')
+            const container=document.getElementById('ContainerIMG')
+            const legend=document.getElementById('legend')
+            const imgContainer=document.getElementById('img')
+            const buttonX=document.getElementsByClassName('close')[0]
+
+            img.onclick=(e)=>{
+                imgContainer.src=e.target.src
+                imgContainer.alt=e.target.alt
+                container.style.display='block'
+                legend.innerHTML=e.target.alt
+            }
+            buttonX.onclick=(e)=>{
+                container.style.display='none'
+            }
+            
+        </script>
+    </div>
+</body>
+</html>
