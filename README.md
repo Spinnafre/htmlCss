@@ -1,5 +1,9 @@
 # The simple animation CSS
 
+<h1 align="center">
+  <img  src="https://github.com/Spinnafre/htmlCss/blob/master/t1.gif" alt="gif do app" width=60% height=60%>
+</h1>
+
 ## 💻 Projeto
 ### :mahjong: Funcionalidades
 
